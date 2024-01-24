@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Logo from "../aasets/M__1_-removebg-preview.png";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaLinkedin, FaGithub, FaGit } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const Navbar = () => {
   const [mobileNav, setMobileNav] = useState(false);
@@ -44,7 +46,42 @@ const Navbar = () => {
       </ul>
 
       {/* social icons */}
-      <div className="hidden"></div>
+      <div className="fixed hidden md:flex flex-col top-[35%] left-0">
+        <ul>
+          <li className="w-40 h-16 flex justify-between items-center -ml-[100px] hover:-ml-3 duration-300 bg-blue-600">
+            <a
+              className="flex justify-between items-center w-full text-gray-300 font-bold"
+              href="/"
+            >
+              LinkedIn <FaLinkedin size={30} />
+            </a>
+          </li>
+          <li className="w-40 h-16 flex justify-between items-center -ml-[100px] hover:-ml-3 duration-300 bg-gray-900">
+            <a
+              className="flex justify-between items-center w-full text-gray-300 font-bold"
+              href="/"
+            >
+              Github <FaGithub size={30} />
+            </a>
+          </li>
+          <li className="w-40 h-16 flex justify-between items-center -ml-[100px] hover:-ml-3 duration-300 bg-teal-600">
+            <a
+              className="flex justify-between items-center w-full text-gray-300 font-bold"
+              href="/"
+            >
+              Email <HiOutlineMail size={30} />
+            </a>
+          </li>
+          <li className="w-40 h-16 flex justify-between items-center -ml-[100px] hover:-ml-3 duration-300 bg-gray-500">
+            <a
+              className="flex justify-between items-center w-full text-gray-300 font-bold"
+              href="/"
+            >
+              Resume <BsFillPersonLinesFill size={30} />
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
