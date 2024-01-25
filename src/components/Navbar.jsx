@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../aasets/M__1_-removebg-preview.png";
-import { FaBars, FaTimes, FaLinkedin, FaGithub, FaGit } from "react-icons/fa";
+import { FaBars, FaTimes, FaLinkedin, FaGithub } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -46,7 +46,7 @@ const Navbar = () => {
       </ul>
 
       {/* social icons */}
-      <div className="fixed hidden md:flex flex-col top-[35%] left-0">
+      <div className="fixed hidden xl:flex flex-col top-[35%] left-0">
         <ul>
           <li className="w-40 h-16 flex justify-between items-center -ml-[100px] hover:-ml-3 duration-300 bg-blue-600">
             <a
