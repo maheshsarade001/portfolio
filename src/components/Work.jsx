@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import WorkImg from "../aasets/projects/workImg.jpeg";
+import YoutubeSS from "../aasets/projects/youtubeSS.png";
 
 const Work = () => {
   const [activeTab, setActiveTab] = useState("Experience");
@@ -15,7 +16,7 @@ const Work = () => {
   };
 
   return (
-    <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
+    <div name="work" className="w-full h-screen text-gray-300 bg-[#0a192f]">
       <div className="max-w-5xl mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="sticky pb-8 flex gap-4 items-center">
           <p className="text-4xl font-bold border-b-4 border-pink-600 inline text-gray-300">
@@ -23,17 +24,17 @@ const Work = () => {
           </p>
           <div>
             <button
-              className={`px-6 py-2 border ${
+              className={`md:px-6 px-2 py-2 border ${
                 activeTab === "Experience" ? "bg-pink-600" : "bg-slate-600"
-              } text-xl ml-4 font-bold`}
+              } md:text-xl ml-4 font-bold`}
               onClick={() => handleTabClick("Experience")}
             >
               Experience
             </button>
             <button
-              className={`px-6 py-2 border ${
+              className={`md:px-6 px-2 py-2 border ${
                 activeTab === "Projects" ? "bg-pink-600" : "bg-slate-600"
-              } text-xl ml-4 font-bold`}
+              } md:text-xl ml-4 font-bold`}
               onClick={() => handleTabClick("Projects")}
             >
               Projects
@@ -68,21 +69,29 @@ const Work = () => {
                 <>
                   {/* Card */}
                   <div
-                    style={{ backgroundImage: `url(${WorkImg})` }}
+                    style={{ backgroundImage: `url(${YoutubeSS})` }}
                     className="shadow-lg  shadow-pink-300 group container rounded-md flex justify-center items-center mx-auto content-div"
                   >
                     {/* hover effects */}
                     <div className="opacity-0 group-hover:opacity-100">
                       <span className="text-2xl font-bold text-white tracking-wider ">
-                        React Js Application
+                        Youtube Clone
                       </span>
                       <div className="pt-8 text-center">
-                        <a href="/">
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href="https://youtube-clone-wheat-iota.vercel.app/"
+                        >
                           <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                             Demo
                           </button>
                         </a>
-                        <a href="/">
+                        <a
+                          href="https://github.com/maheshsarade001/youtube-clone"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                             Code
                           </button>
