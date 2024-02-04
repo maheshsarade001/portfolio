@@ -107,7 +107,9 @@ const Navbar = () => {
           <li className="w-40 h-16 flex justify-between items-center -ml-[100px] hover:-ml-3 duration-300 bg-blue-600">
             <a
               className="flex justify-between items-center w-full text-gray-300 font-bold"
-              href="/"
+              href="https://www.linkedin.com/in/mahesh-sarade?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn <FaLinkedin size={30} />
             </a>
@@ -115,7 +117,9 @@ const Navbar = () => {
           <li className="w-40 h-16 flex justify-between items-center -ml-[100px] hover:-ml-3 duration-300 bg-gray-900">
             <a
               className="flex justify-between items-center w-full text-gray-300 font-bold"
-              href="/"
+              href="https://github.com/maheshsarade001"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Github <FaGithub size={30} />
             </a>
@@ -123,7 +127,9 @@ const Navbar = () => {
           <li className="w-40 h-16 flex justify-between items-center -ml-[100px] hover:-ml-3 duration-300 bg-teal-600">
             <a
               className="flex justify-between items-center w-full text-gray-300 font-bold"
-              href="/"
+              href="mailto:maheshsarade001@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -131,7 +137,9 @@ const Navbar = () => {
           <li className="w-40 h-16 flex justify-between items-center -ml-[100px] hover:-ml-3 duration-300 bg-gray-500">
             <a
               className="flex justify-between items-center w-full text-gray-300 font-bold"
-              href="/"
+              href="https://drive.google.com/file/d/11M8x8zC4r9q0MuhaQmvvRAdOCdPfpI-M/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
