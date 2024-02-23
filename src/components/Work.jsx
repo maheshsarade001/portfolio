@@ -127,7 +127,7 @@ const Work = () => {
                       </span>
                       <div className="pt-8 text-center">
                         <a
-                          href="/home/mahesh/Pictures/Screenshots/taxiwala-1.png"
+                          href="https://portfolio-maheshsarade001.vercel.app/"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
